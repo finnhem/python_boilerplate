@@ -1,4 +1,4 @@
-# boilerplate-repo-python
+# python-boilerplate
 
 Minimal Python boilerplate for starting a new project.
 
