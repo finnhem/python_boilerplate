@@ -25,7 +25,7 @@
 	"forwardPorts": [8000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "uv sync --group dev",
+	"postCreateCommand": "uv sync --group dev && opengrep --config auto .",
 	"remoteEnv": {
 		"PATH": "${containerEnv:PATH}:${containerWorkspaceFolder}/.venv/bin",
 		"UV_LINK_MODE": "copy"
