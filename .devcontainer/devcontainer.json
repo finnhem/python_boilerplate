@@ -30,6 +30,16 @@
 		"PATH": "${containerEnv:PATH}:${containerWorkspaceFolder}/.venv/bin",
 		"UV_LINK_MODE": "copy"
 	},
+	"customizations": {
+		"vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python"
+            },
+			"extensions": [
+				"ms-python.python"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
