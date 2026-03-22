@@ -9,8 +9,7 @@
 	},
 	"features": {
 		"ghcr.io/jsburckhardt/devcontainer-features/opencode:1": {},
-		"ghcr.io/devcontainers-extra/features/curl-apt-get:1": {},
-		"ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {}
+		"ghcr.io/devcontainers-extra/features/curl-apt-get:1": {}
 	},
 
 	// nvidia gpu support
@@ -28,7 +27,7 @@
 	"postCreateCommand": "uv sync --group dev && opengrep --config auto .",
 	"remoteEnv": {
 		"PATH": "${containerEnv:PATH}:${containerWorkspaceFolder}/.venv/bin",
-		"UV_LINK_MODE": "copy"
+		"UV_CACHE_DIR": "${containerWorkspaceFolder}/.uv-cache"
 	},
 	"customizations": {
 		"vscode": {
