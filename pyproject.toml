@@ -15,3 +15,6 @@ dev = [
     "rust-just>=1.47.1",
     "ty>=0.0.24",
 ]
+
+[tool.uv]
+exclude-newer = "1 week"
